@@ -106,3 +106,9 @@ counting_nums()
 #       turn_left()
 #   else:
 #       move()
+
+# Also can be written as
+    # elif front_is_clear():
+    #     move()
+    # else:
+    #     turn_left()
