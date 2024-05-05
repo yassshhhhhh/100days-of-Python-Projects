@@ -59,7 +59,7 @@ stages = ['''
 ''']
 
 
-word_list = ["aardvark", "baboon", "camel"]
+word_list = ["aardvark"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 lives = 6
@@ -81,7 +81,7 @@ while "_" in display:
         position += 1
         if letter == guess:
             display[position - 1] = letter
-    print(stages[lives])
+            print(stages[lives]) #Here for aardvark, "a" comes three times, so does stages. Update!
         
     if guess not in chosen_word:    
         lives -= 1
