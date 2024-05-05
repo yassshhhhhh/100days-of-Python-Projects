@@ -81,7 +81,7 @@ while "_" in display:
         position += 1
         if letter == guess:
             display[position - 1] = letter
-            print(stages[lives])
+    print(stages[lives])
         
     if guess not in chosen_word:    
         lives -= 1
@@ -89,13 +89,15 @@ while "_" in display:
         print(f"You are left with {lives} lives.")
         if lives == 0:
             print("You lose!")
+            break
             
         
         # print(lives)
     position = 0
     print(display)
+if "_" not in display:
+    print("You win!")
 
-print("You win!")
 
 
 #Check guessed letter
