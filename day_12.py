@@ -38,3 +38,30 @@
 #   # else:
 #   #   game_level = enemies[1]
 #     print(game_level)
+
+# Modifying global scope
+
+# enemies = 1
+# print(enemies)
+# def increase_enemies():
+#   # global enemies #global scope statement. But it is fallible. So rather than modifying global scope, we can use the return statement.
+#   print(f"enemies inside function: {enemies}")
+#   return enemies + 1
+
+# enemies = increase_enemies()
+# print(f"enemies outside function: {enemies}")
+
+# Global constants
+# PI = 3.14159
+# URL = "https://www.google.com"
+# TWITTER_HANDLE = "@yassshhhhh"
+
+def bar():
+    my_variable = 9
+
+    if 16 > 9:
+      my_variable = 16
+
+    print(my_variable)
+
+bar()
