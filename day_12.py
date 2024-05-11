@@ -63,5 +63,6 @@ def bar():
       my_variable = 16
 
     print(my_variable)
+    # Remember that in Python there is no block scope. Inside a if/else/for/while code block is the same as outside it.
 
 bar()
