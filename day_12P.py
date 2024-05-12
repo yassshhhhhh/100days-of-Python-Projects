@@ -9,10 +9,10 @@ print(logo)
 print("Welcome to Guess the number!")
 print("I'm thinking of a number between 1 and 100.")
 number = random.randrange(1, 100)  
-print("Number:", number)
+# print("Number:", number)
 EASY_LEVEL = 10
 HARD_LEVEL = 5
-difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
+difficulty = input("Choose the difficulty. Type 'easy' or 'hard': ").lower()
 
 def game(attemps):
     while attemps != 0:
@@ -27,7 +27,7 @@ def game(attemps):
         elif guess > number:
             print("Too high \nGuess again")
             attemps -= 1
-    return "Ohh noo! You've run out of guesses, you lose."
+    return f"Ohh noo! You've run out of guesses, you lose and the number I was thinking is {number}."
 
 if difficulty == "hard":
     print(game(HARD_LEVEL))
