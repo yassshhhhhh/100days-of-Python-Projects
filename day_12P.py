@@ -22,7 +22,6 @@ def game(attemps):
             return f"You guessed it right!, the number was {number}."
         elif guess < number:
             print("Too low \nGuess again")
-
             attemps-= 1
         elif guess > number:
             print("Too high \nGuess again")
