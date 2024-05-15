@@ -38,6 +38,11 @@ game_is = True
 while game_is is True:
     question_A = random.choice(data)
     question_B = random.choice(data)
-    game(question_A, question_B)
+    # game(question_A, question_B)
+    act_ans = game(question_A, question_B)
     ans = input("Who has more followers? Type 'A' or 'B': ").lower()
-    compare()
+    if ans == "a":
+        foll_count = question_A['follower_count']
+    elif ans == "b":
+        foll_count = question_B['follower_count']
+    compare(act_ans, foll_count)
