@@ -18,4 +18,4 @@ Total_bill = Initial_bill + Tip_value
 bill_per_person = Total_bill / Number_of_people
 final = "{:.2f}".format(bill_per_person)
 
-print(f"Each person should pay: ${final}")
+print(f"Each person should pay: ${final} \nThank You.")
