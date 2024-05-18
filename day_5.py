@@ -48,7 +48,7 @@ for i in hard_password:
 
 print(" ")
 
-
+print("Thank you for using PyPassword Generator.")
 # #Eazy Level
 # # password = ""
 
