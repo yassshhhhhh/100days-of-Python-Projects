@@ -90,11 +90,10 @@
 #   bill += 1
 
 # print("Thankyou for choosing Python Pizza deliveries.")
-# print(f"Your final bill is ${bill}")
+# print(f"Your final bill is ${bill}.")
 
 
 # Love Calculator
-
 print("The love calculator is calculating your score...!")
 name1 = input("Enter your name: ").lower()
 name2 = input("Enter your partner name: ").lower()
