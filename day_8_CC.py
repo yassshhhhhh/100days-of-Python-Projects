@@ -137,3 +137,5 @@ while acc_input is True:
 #     if user_input == 'no':
 #         print("Bye.")
 #         acc_input = False
+
+# Also decode text can be multiplied to increase security level.
