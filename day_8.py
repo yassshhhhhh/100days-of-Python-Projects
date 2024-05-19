@@ -61,5 +61,6 @@ def prime_checker(number):
 # Write your code above this line 👆
     
 #Do NOT change any of the code below👇
+
 n = int(input("Enter a number: ")) # Check this number
 prime_checker(number=n)
