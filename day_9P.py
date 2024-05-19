@@ -10,7 +10,6 @@ def bid_users():
 bid_users()
 
 users = True
-
 while users is True:
     new_user = input("Are there any other bidders? Type 'yes' or 'no'\n").lower()
     if new_user == "yes":
