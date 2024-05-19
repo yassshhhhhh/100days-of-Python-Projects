@@ -94,7 +94,6 @@ while game is True:
         game = False
         print("Goodbye.")
 
-
 # import random
 # # from replit import clear
 # # from art import logo
