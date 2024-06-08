@@ -70,6 +70,6 @@ while is_game_on:
     snake.move()
 
 
-
+# This is the last time I'm doing single commits. 
 
 screen.exitonclick()
