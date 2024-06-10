@@ -58,11 +58,6 @@ class Ball(Turtle):
         self.move_speed = 0.1
         self.bounce_x()
 
-    # def reverse(self):
-    #     new_x = self.xcor() - self.x_move
-    #     new_y = self.ycor() - self.y_move
-    #     self.goto(new_x, new_y)
-
 
 # from scoreboard import Scoreboard
 
