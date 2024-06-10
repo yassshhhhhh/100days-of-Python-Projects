@@ -1,7 +1,7 @@
 from turtle import Screen
 import time
-# from snake import Snake
 
+# from snake import Snake
 from turtle import Turtle
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
@@ -57,7 +57,6 @@ class Snake:
 
 
 # from food import Food
-
 import random
 from turtle import Turtle
 
@@ -80,7 +79,6 @@ class Food(Turtle):
 
 
 # from scoreboard import Scoreboard
-
 from turtle import Turtle
 ALIGNMENT = "center"
 FONT_1 = ("courier", 24, "normal")
