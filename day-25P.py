@@ -41,7 +41,7 @@ answered_states = []
 while True:
 
     if answer_state == "exit":
-        remaining_states = []
+        remaining_states = [] #remaining_states = [state for state in list_of_states if state not in answered_states]
         for state in list_of_states:
             if state not in answered_states:
                 remaining_states.append(state)
