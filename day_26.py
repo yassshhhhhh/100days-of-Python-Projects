@@ -33,6 +33,29 @@ print(dict_data)
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
-user_input = input("Enter you name: ").upper()
-letters_list = [dict_data[letter] for letter in user_input]
-print(letters_list)
+# user_input = input("Enter you name: ").upper()
+# letters_list = [dict_data[letter] for letter in user_input]
+# print(letters_list)
+
+while True:
+    user_input = input("Enter you name: ").upper()
+    try:
+        letters_list = [dict_data[letter] for letter in user_input]
+        print(letters_list)
+        break
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+
+
+# def phonetic_alphabet():
+#     user_input = input("Enter you name: ").upper()
+#     try:
+#         letters_list = [dict_data[letter] for letter in user_input]
+#     except KeyError:
+#         print("Sorry, only letters in the alphabet please.")
+#         phonetic_alphabet()
+#     else:
+#         print(letters_list)
+# 
+# 
+# phonetic_alphabet()
