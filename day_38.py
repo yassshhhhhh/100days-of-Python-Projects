@@ -1,11 +1,13 @@
 import requests
 import datetime
+import os
 
-APP_ID = "a07bafdc"
-API_KEY = "d2b2a77ede3f2ea2aca39863aa4d5c0a"
-API_ENDPOINT = "https://trackapi.nutritionix.com/v2/natural/exercise"
+
+APP_ID = os.environ["EV_APP_ID"]
+API_KEY = os.environ["EV_API_KEY"]
+API_ENDPOINT = os.environ["EV_API_ENDPOINT"]
+
 exercises = input("Tell me which exercises you did: ")
-
 headers = {
     "x-app-id": APP_ID,
     "x-app-key": API_KEY
@@ -25,7 +27,8 @@ today = datetime.datetime.now()
 date = today.strftime("%d/%m/%Y")
 time = today.strftime("%H:%M:%S")
 
-sheety_endpoint = "https://api.sheety.co/45ba23757002f5ca89d08e8cedfa568a/workoutTracking/workouts"
+sheety_endpoint = os.environ["EV_SHEETY_ENDPOINT"]
+TOKEN = os.environ["EV_TOKEN"]
 
 for exercise in data['exercises']:
     duration = exercise['duration_min']
@@ -41,6 +44,13 @@ for exercise in data['exercises']:
         }
     }
 
-    response = requests.post(url=sheety_endpoint, json=parameters)
+    headers = {
+        "Authorization": f"Basic {TOKEN}",
+    }
+    # response = requests.get(url=sheety_endpoint, headers=headers)
+    # response.raise_for_status()
+    # print(response.text)
+
+    response = requests.post(url=sheety_endpoint, headers=headers, json=parameters)
     response.raise_for_status()
     print(response.text)
